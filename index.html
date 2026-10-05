@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ingeniería de Sistemas — Universidad de la Amazonia</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Estilos propios -->
+  <style>
+    /* Estilos mejorados */
+
+    body {
+      font-family: 'Segoe UI', Roboto, sans-serif;
+      color: #2d3436;
+      line-height: 1.6;
+    }
+
+    /* Menú */
+    .navbar-dark {
+      background-color: #004d40 !important;
+    }
+    .navbar-dark .nav-link {
+      transition: color 0.2s ease;
+    }
+    .navbar-dark .nav-link:hover {
+      color: #a5d6a7 !important;
+    }
+
+    /* Sección principal */
+    .hero {
+      background: linear-gradient(135deg, #00695c 0%, #2e7d32 50%, #4caf50 100%);
+      color: white;
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    /* Títulos de sección */
+    .section-title {
+      border-left: 4px solid #2e7d32;
+      color: #2e7d32;
+      padding-left: 15px;
+      margin: 40px 0 20px;
+      font-weight: 600;
+      font-size: 1.8rem;
+    }
+
+    /* Tarjetas */
+    .card {
+      border: none;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      margin-bottom: 20px;
+      transition: all 0.3s ease;
+      border-left: 4px solid transparent;
+      background-color: #fff;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(46, 125, 50, 0.15);
+      border-left-color: #4caf50;
+    }
+    .card h5 {
+      color: #2e7d32;
+      font-weight: 700;
+    }
+
+    /* Foto redonda */
+    .foto-aldo {
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      box-shadow: 0 4px 20px rgba(0, 105, 92, 0.4);
+      display: block;
+      margin: 0 auto 25px;
+      transition: transform 0.3s ease;
+    }
+    .foto-aldo:hover {
+      transform: scale(1.05);
+    }
+
+    /* Enlaces */
+    a {
+      color: #2e7d32;
+      transition: color 0.2s ease;
+    }
+    a:hover {
+      color: #4caf50;
+      text-decoration: none;
+    }
+
+    /* Pie de página */
+    .footer {
+      background: #1b5e20;
+      color: #e8f5e9;
+      padding: 30px 0;
+      margin-top: 50px;
+    }
+    .footer a {
+      color: #a5d6a7;
+    }
+    .footer a:hover {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Menú -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">Uniamazonia — Ingeniería de Sistemas</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#datos">Datos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#perfil">Perfil</a></li>
+        <li class="nav-item"><a class="nav-link" href="#mision">Misión y Visión</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Sección Principal -->
+<section class="hero" id="inicio">
+  <div class="container">
+    <img src="img/foto.png" alt="Aldo" class="foto-aldo mb-3" />
+    <h1 class="display-4 fw-bold">Ingeniería de Sistemas</h1>
+    <p class="lead">Universidad de la Amazonia — Florencia, Caquetá</p>
+    <hr class="my-4 bg-white opacity-50" />
+    <p class="fs-5">Formamos profesionales capaces de crear soluciones tecnológicas para el desarrollo de la región Amazónica y Colombia.</p>
+  </div>
+</section>
+
+<div class="container my-5">
+
+  <!-- Datos -->
+  <h2 class="section-title" id="datos">📋 Datos del Programa</h2>
+  <div class="row g-4">
+    <div class="col-md-6">
+      <div class="card p-3 h-100">
+        <ul class="list-unstyled mb-0">
+          <li><strong>Título:</strong> Ingeniero de Sistemas</li>
+          <li><strong>Modalidad:</strong> Presencial</li>
+          <li><strong>Jornada:</strong> Diurna</li>
+          <li><strong>Duración:</strong> 10 semestres</li>
+          <li><strong>Créditos:</strong> 178</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card p-3 h-100">
+        <ul class="list-unstyled mb-0">
+          <li><strong>Código SNIES:</strong> 52384</li>
+          <li><strong>Resolución:</strong> 001562 del 16/02/2022</li>
+          <li><strong>Acuerdo:</strong> 16 del 26/08/2004</li>
+          <li><strong>Sede:</strong> Florencia, Caquetá</li>
+          <li><strong>Plan:</strong> Acuerdo 44 del 02/12/2020</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Perfil -->
+  <h2 class="section-title" id="perfil">🎓 Perfil de Egreso</h2>
+  <div class="card p-4 mb-4 shadow-sm">
+    <p>El Ingeniero de Sistemas comprende su entorno y reconoce responsabilidades éticas, legales y sociales. Se mantiene en aprendizaje continuo y se perfecciona de forma autónoma.</p>
+  </div>
+
+  <!-- Misión y Visión -->
+  <h2 class="section-title" id="mision">🎯 Misión y Visión</h2>
+  <div class="row g-4">
+    <div class="col-md-6">
+      <div class="card p-4 h-100 shadow-sm">
+        <h5>Misión</h5>
+        <p>Formar profesionales íntegros capaces de solucionar problemas mediante sistemas de información, contribuyendo al desarrollo social, económico y tecnológico de la región y el país.</p>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card p-4 h-100 shadow-sm">
+        <h5>Visión</h5>
+        <p>Ser un programa líder en formación integral, comprometido con el desarrollo tecnológico apoyado en Tecnologías de la Información y la Comunicación.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Inversión -->
+  <h2 class="section-title">💰 Inversión</h2>
+  <div class="card p-3 mb-4 shadow-sm">
+    <ul class="list-unstyled mb-0">
+      <li><strong>Inscripción:</strong> 8.0% del S.M.M.L.V. (Acuerdo 02 — 26/01/2012)</li>
+      <li><strong>Matrícula:</strong> Según Acuerdo 01 — 26/01/2012</li>
+    </ul>
+  </div>
+
+  <!-- Contacto -->
+  <h2 class="section-title" id="contacto">📞 Contacto</h2>
+  <div class="card p-4 shadow-sm">
+    <ul class="list-unstyled mb-0">
+      <li><strong>Coordinadora:</strong> Paula Andrea Chica Murcia</li>
+      <li><strong>Teléfono:</strong> 320 454 1936</li>
+      <li><strong>Correo:</strong> pisistemas@uniamazonia.edu.co</li>
+      <li><strong>Ubicación:</strong> Campus Florencia, Barrio El Porvenir, Bloque Administrativo, 1er piso — Florencia, Caquetá</li>
+    </ul>
+  </div>
+
+</div>
+
+<!-- Pie -->
+<footer class="footer text-center">
+  <div class="container">
+    <p class="mb-1">Página creada para la asignatura — Entregable 1</p>
+    <p class="small mb-0">Fuente: Universidad de la Amazonia</p>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Script propio -->
+<script>
+  // Desplazamiento suave
+  document.querySelectorAll('a[href^="#"]').forEach(enlace => {
+    enlace.addEventListener('click', function (e) {
+      e.preventDefault();
+      const destino = document.querySelector(this.getAttribute('href'));
+      if (destino) {
+        destino.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+  // Mensaje en consola y en pantalla
+  window.addEventListener('load', () => {
+    console.log('✅ Página cargada correctamente');
+
+    // Mostrar mensaje en la pantalla
+    const mensaje = document.createElement('div');
+    mensaje.innerText = 'Página cargada correctamente';
+    mensaje.style.position = 'fixed';
+    mensaje.style.top = '10px';
+    mensaje.style.right = '10px';
+    mensaje.style.backgroundColor = '#4CAF50';
+    mensaje.style.color = '#fff';
+    mensaje.style.padding = '10px 20px';
+    mensaje.style.borderRadius = '5px';
+    mensaje.style.boxShadow = '0 4px 8px rgba(0,0,0,0.2)';
+    mensaje.style.zIndex = '1000';
+    document.body.appendChild(mensaje);
+    setTimeout(() => mensaje.remove(), 3000);
+  });
+</script>
+</body>
+</html>

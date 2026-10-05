@@ -1,0 +1,94 @@
+/* Tipografía global y estilos base */
+body {
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  color: #2d3436;
+  line-height: 1.6;
+}
+
+/* Menú */
+.navbar-dark {
+  background-color: #004d06 !important;
+}
+.navbar-dark .nav-link {
+  transition: color 0.2s ease;
+}
+.navbar-dark .nav-link:hover {
+  color: #a5d6a7 !important;
+}
+
+/* Sección principal */
+.hero {
+  background: linear-gradient(135deg, #006905 0%, #2e7d32 50%, #4caf50 100%);
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+}
+
+/* Títulos de sección */
+.section-title {
+  border-left: 4px solid #2e7d32;
+  color: #2e7d32;
+  padding-left: 15px;
+  margin: 40px 0 20px;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+/* Tarjetas */
+.card {
+  border: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+  border-left: 4px solid transparent;
+  background-color: #fff;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(46, 125, 50, 0.15);
+  border-left-color: #4caf50;
+}
+.card h5 {
+  color: #2e7d32;
+  font-weight: 700;
+}
+
+/* Foto redonda */
+.foto-aldo {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: 0 4px 20px rgba(0, 105, 92, 0.4);
+  display: block;
+  margin: 0 auto 25px;
+  transition: transform 0.3s ease;
+}
+.foto-aldo:hover {
+  transform: scale(1.05);
+}
+
+/* Enlaces */
+a {
+  color: #2e7d32;
+  transition: color 0.2s ease;
+}
+a:hover {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+/* Pie de página */
+.footer {
+  background: #1b5e20;
+  color: #e8f5e9;
+  padding: 30px 0;
+  margin-top: 50px;
+}
+.footer a {
+  color: #a5d6a7;
+}
+.footer a:hover {
+  color: #fff;
+}
